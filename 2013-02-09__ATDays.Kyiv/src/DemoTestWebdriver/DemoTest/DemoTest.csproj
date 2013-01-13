@@ -55,8 +55,26 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfacePO_n_Tests\AllPagesTest.cs" />
+    <Compile Include="InterfacePO_n_Tests\MyPages.cs" />
+    <Compile Include="InterfacePO_n_Tests\InterfacePO_n_TestsSample.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\AbstractPageBase.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\DonatePage.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\DonationPaymentsForm.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\MainPage.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\PaymentResultErrorInvalidCreditCard.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\PaymentResultPage.cs" />
+    <Compile Include="InterfacePO_n_Tests\Roles\IInvokable.cs" />
+    <Compile Include="InterfacePO_n_Tests\WebBrowser.cs" />
+    <Compile Include="ObjectPageObject\Pages\AbstractPageBase.cs" />
+    <Compile Include="ObjectPageObject\MyPages.cs" />
+    <Compile Include="ObjectPageObject\ObjectTestSample.cs" />
+    <Compile Include="ObjectPageObject\Pages\DonatePage.cs" />
+    <Compile Include="ObjectPageObject\Pages\DonationPaymentsForm.cs" />
+    <Compile Include="ObjectPageObject\Pages\MainPage.cs" />
+    <Compile Include="ObjectPageObject\Pages\PaymentResultPage.cs" />
+    <Compile Include="ObjectPageObject\WebBrowser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticClassWildPageObject\Pages.cs" />
     <Compile Include="StaticPageobject\MyPages.cs" />
     <Compile Include="StaticPageobject\StaticTestSample.cs" />
     <Compile Include="StaticPageobject\WebBrowser.cs" />
@@ -70,6 +88,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

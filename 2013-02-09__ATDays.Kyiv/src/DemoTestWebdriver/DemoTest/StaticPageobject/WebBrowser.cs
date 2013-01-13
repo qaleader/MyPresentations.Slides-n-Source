@@ -8,6 +8,7 @@ using OpenQA.Selenium.Remote;
 
 namespace DemoTest.StaticPageobject
 {
+        
     public static class WebBrowser
     {
         public static RemoteWebDriver _driver = null;
@@ -26,7 +27,5 @@ namespace DemoTest.StaticPageobject
         {
             _driver.Dispose();
         }
-
-
     }
 }

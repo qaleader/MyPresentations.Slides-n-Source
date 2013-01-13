@@ -14,7 +14,7 @@ namespace DemoTest.StaticPageobject
     {
         public static RemoteWebDriver Driver 
         { 
-                 get { return WebBrowser.Driver; }
+            get { return WebBrowser.Driver; }
         }
 
         public static class MainPage
