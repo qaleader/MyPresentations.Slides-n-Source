@@ -55,6 +55,22 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FinalPageObject\AllPagesTest.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\ExpectedControlsTestBase.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonationPaymentsForm_ExpectedControls.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\MainPage_ExpectedControls.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonatePage_ExpectedControls.cs" />
+    <Compile Include="FinalPageObject\FinalPageObject_TestsSample.cs" />
+    <Compile Include="FinalPageObject\MyPages.cs" />
+    <Compile Include="FinalPageObject\Pages\AbstractPageBase.cs" />
+    <Compile Include="FinalPageObject\Pages\DonatePage.cs" />
+    <Compile Include="FinalPageObject\Pages\DonationPaymentsForm.cs" />
+    <Compile Include="FinalPageObject\Pages\MainPage.cs" />
+    <Compile Include="FinalPageObject\Pages\PaymentResultErrorInvalidCreditCard.cs" />
+    <Compile Include="FinalPageObject\Pages\PaymentResultPage.cs" />
+    <Compile Include="FinalPageObject\Roles\IHaveExpectedControls.cs" />
+    <Compile Include="FinalPageObject\Roles\IInvokable.cs" />
+    <Compile Include="FinalPageObject\WebBrowser.cs" />
     <Compile Include="InterfacePO_n_Tests\AllPagesTest.cs" />
     <Compile Include="InterfacePO_n_Tests\MyPages.cs" />
     <Compile Include="InterfacePO_n_Tests\InterfacePO_n_TestsSample.cs" />

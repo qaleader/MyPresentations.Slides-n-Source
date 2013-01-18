@@ -21,6 +21,7 @@ namespace DemoTest.StaticPageobject
         {
             MyPages.MainPage.Open();
 
+
             MyPages.MainPage.GoToDonatePage();
             MyPages.DonatePage.Donate_50_UAH_Using_Debit_Card();
             MyPages.DonationPaymentsForm.FillDonationForm
