@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebDriverStarterMSTest", "WebDriverStarterMSTest\WebDriverStarterMSTest.csproj", "{D98E4A7F-84FC-4942-9D9A-A072A63E91DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DFCA2D9F-D70D-49E4-B941-B25A18AECA02}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WebDriverStarterMSTest.vsmdi = WebDriverStarterMSTest.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WebDriverStarterMSTest.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D98E4A7F-84FC-4942-9D9A-A072A63E91DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D98E4A7F-84FC-4942-9D9A-A072A63E91DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D98E4A7F-84FC-4942-9D9A-A072A63E91DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D98E4A7F-84FC-4942-9D9A-A072A63E91DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

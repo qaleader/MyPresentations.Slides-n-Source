@@ -2,11 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium;
 
 namespace DemoTest.FinalPageObject.Pages
 {
     public class PaymentResultErrorInvalidCreditCard: PaymentResultPage, IInvokable
     {
+
+        [FindsBy(How=How.CssSelector, Using=@"div#mw-content-text * big > span")]
+        private IWebElement lblErrorDetailsText;
+        
         public void Invoke()
         {
             if (Exists() == false)
@@ -29,6 +35,11 @@ namespace DemoTest.FinalPageObject.Pages
                 );
                 this.WaitUntilExists();
             }
+        }
+
+        public string GetErrorDetailsText()
+        {
+            return lblErrorDetailsText.Text;
         }
 
         public bool Exists()

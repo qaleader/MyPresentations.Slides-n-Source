@@ -97,13 +97,12 @@ namespace DemoTest.FinalPageObject.Pages
 
             rbtnCardVisa.Click();
 
-            WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(30));
-            wait.Until<IWebElement>(e => frameCardNumber.Displayed ? frameCardNumber : null);
-                      
+            WebBrowser.WaitUntilVisible(() => frameCardNumber, 20);
+                                  
 
             Driver.SwitchTo().Frame(frameCardNumber);
 
-            wait.Until<IWebElement>( e => txtName.Displayed ? txtName : null);
+            WebBrowser.WaitUntilVisible(() => txtName, 20);
 
             txtName.Clear();
             txtName.SendKeys(cardNumber);

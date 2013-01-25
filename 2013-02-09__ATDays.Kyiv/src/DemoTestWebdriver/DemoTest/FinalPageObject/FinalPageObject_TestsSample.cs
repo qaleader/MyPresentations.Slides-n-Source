@@ -14,6 +14,11 @@ namespace DemoTest.FinalPageObject
     public class FinalPageObject_TestsSample
     {
 
+        public RemoteWebDriver Driver
+        {
+            get { return WebBrowser.Driver; }
+        }
+
         [TestMethod]
         public void Donate_test_object_v2()
         {
@@ -39,15 +44,32 @@ namespace DemoTest.FinalPageObject
             Assert.AreEqual("Donate-error", paymentResult);
         }
 
-        [TestMethod]
-        public void Donate_test_object_v3()
-        {
-            var page = MyPages.PaymentResultErrorInvalidCreditCard;
-            page.Invoke();
 
-            string paymentResult = page.GetResultHeaderText();
-            Assert.AreEqual("Donate-error", paymentResult);
+
+        [TestMethod]
+        public void Test_for_donation_error_text()
+        {
+
+            var donationErrorPage = MyPages.PaymentResultErrorInvalidCreditCard; 
+            donationErrorPage.Invoke();
+
+            Assert.AreEqual("Your transaction could not be accepted."
+                            , donationErrorPage.GetErrorDetailsText());
+
         }
+
+        [TestMethod]
+        public void Test_for_donation_error_status_header()
+        {
+
+            var donationErrorPage = MyPages.PaymentResultErrorInvalidCreditCard;
+            donationErrorPage.Invoke();
+
+            Assert.AreEqual("Donate-error"
+                            , donationErrorPage.GetResultHeaderText());
+
+        }
+
 
 
     }

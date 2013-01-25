@@ -1,0 +1,12 @@
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriverStarterMSTest.dll
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriverStarterMSTest.pdb
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\Castle.Core.dll
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriver.dll
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriver.Support.dll
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\Castle.Core.xml
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriver.xml
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\WebDriver.Support.xml
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\obj\Debug\WebDriverStarterMSTest.dll
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\obj\Debug\WebDriverStarterMSTest.pdb
+D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\bin\Debug\IEDriverServer.exe

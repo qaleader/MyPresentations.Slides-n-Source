@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="cf6342e6-fd51-410f-b59c-41a3e58058ff" name="dzhariy@DZ 2013-01-24 23:00:48" runUser="dz\dzhariy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="54e60e6e-3ff0-4cb5-a108-c0bcb065fa54">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="dzhariy_DZ 2013-01-24 23_00_48">
+      <DeploymentItem filename="D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\packages\Selenium.WebDriver.2.29.1\lib\net40\WebDriver.dll" />
+      <DeploymentItem filename="D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\packages\Castle.Core.3.0.0.4001\lib\net40-client\Castle.Core.dll" />
+      <DeploymentItem filename="D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\packages\Selenium.Support.2.29.1\lib\net40\WebDriver.Support.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-24T23:00:48.0171360+02:00" queuing="2013-01-24T23:00:49.1752022+02:00" start="2013-01-24T23:00:49.5092213+02:00" finish="2013-01-24T23:00:57.8376977+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Test_for_donation_error_text" storage="d:\projects\mypresentations.slides-n-source\2013-02-09__atdays.kyiv\src\webdriverstartermstest\webdriverstartermstest\bin\debug\webdriverstartermstest.dll" id="6bb805b0-54a1-0a31-2173-f995a82c10c9">
+      <Execution id="15531628-b9a4-4a90-a5c1-a043ea139d43" />
+      <TestMethod codeBase="D:/projects/MyPresentations.Slides-n-Source/2013-02-09__ATDays.Kyiv/src/WebDriverStarterMSTest/WebDriverStarterMSTest/bin/Debug/WebDriverStarterMSTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="WebDriverStarterMSTest.MyWebdriverStarterTests, WebDriverStarterMSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_for_donation_error_text" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6bb805b0-54a1-0a31-2173-f995a82c10c9" executionId="15531628-b9a4-4a90-a5c1-a043ea139d43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="15531628-b9a4-4a90-a5c1-a043ea139d43" testId="6bb805b0-54a1-0a31-2173-f995a82c10c9" testName="Test_for_donation_error_text" computerName="DZ" duration="00:00:06.3249753" startTime="2013-01-24T23:00:50.0982550+02:00" endTime="2013-01-24T23:00:57.4696766+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="15531628-b9a4-4a90-a5c1-a043ea139d43">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method WebDriverStarterMSTest.MyWebdriverStarterTests.Test_for_donation_error_text threw exception: 
+System.InvalidOperationException: Unexpected error launching Internet Explorer. Browser zoom level was set to 139%. It should be set to 100% (NoSuchDriver)</Message>
+          <StackTrace>    at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor(InternetExplorerDriverService service, InternetExplorerOptions options)
+   at OpenQA.Selenium.IE.InternetExplorerDriver..ctor()
+   at WebDriverStarterMSTest.MyWebdriverStarterTests.Test_for_donation_error_text() in D:\projects\MyPresentations.Slides-n-Source\2013-02-09__ATDays.Kyiv\src\WebDriverStarterMSTest\WebDriverStarterMSTest\UnitTest1.cs:line 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
