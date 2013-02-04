@@ -39,6 +39,10 @@ namespace DemoTest.InterfacePO_n_Tests
             get { return new PaymentResultErrorInvalidCreditCard(); }
         }
 
-        
+
+        public static LoginPage LoginPage 
+        {
+            get { return new LoginPage(); }
+        }
     }
 }

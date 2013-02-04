@@ -18,27 +18,18 @@ namespace WebDriverStarterMSTest
     public class MyWebdriverStarterTests
     {
 
+        public RemoteWebDriver Driver { get { return WebBrowser.Driver; } }
+
         [TestMethod]
         public void Test_donations_invalid_credit_card()
         {
-            RemoteWebDriver Driver = new InternetExplorerDriver();
-            Driver.Navigate().GoToUrl(@"http://en.wikipedia.org/");
-
-            // On Main Page
-            var lnkSupportUs = Driver.FindElementByCssSelector(@"a[title='Support us']");
-            lnkSupportUs.Click();
-
+            MyPages.MainPage.Open();
+            MyPages.MainPage.GoToDonatePage();
             // On Make your donation page
-            
-            var radio50UAH = Driver.FindElementByCssSelector(@"#input_amount_0[value='50']");
-            radio50UAH.Click(); 
 
+            MyPages.DonatePage.Donate_50_UAH_Using_Debit_Card();
             
-            // And clich on "Donate" button
-            var btnDonate = Driver.FindElementByCssSelector(@"input[value='Donate by credit/debit card']");
-            btnDonate.Click();
-
-            
+           
             // On Billing information
 
             var txtFirstName = Driver.FindElementByName("fname");

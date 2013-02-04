@@ -42,11 +42,12 @@ namespace DemoTest.InterfacePO_n_Tests
         [TestMethod]
         public void Donate_test_object_v3()
         {
-            var page = MyPages.PaymentResultErrorInvalidCreditCard;
-            page.Invoke();
 
-            string paymentResult = page.GetResultHeaderText();
-            Assert.AreEqual("Donate-error", paymentResult);
+            var creditCardErrorPage = MyPages.PaymentResultErrorInvalidCreditCard;
+            creditCardErrorPage.Invoke();
+
+            Assert.AreEqual("Donate-error", creditCardErrorPage.GetResultHeaderText());
+
         }
 
 

@@ -58,9 +58,11 @@
     <Compile Include="FinalPageObject\AllPagesTest.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\ExpectedControlsTestBase.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonationPaymentsForm_ExpectedControls.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\LoginPage_ExpectedControlsTest.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\MainPage_ExpectedControls.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonatePage_ExpectedControls.cs" />
     <Compile Include="FinalPageObject\FinalPageObject_TestsSample.cs" />
+    <Compile Include="FinalPageObject\Pages\LoginPage.cs" />
     <Compile Include="FinalPageObject\MyPages.cs" />
     <Compile Include="FinalPageObject\Pages\AbstractPageBase.cs" />
     <Compile Include="FinalPageObject\Pages\DonatePage.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="InterfacePO_n_Tests\Pages\AbstractPageBase.cs" />
     <Compile Include="InterfacePO_n_Tests\Pages\DonatePage.cs" />
     <Compile Include="InterfacePO_n_Tests\Pages\DonationPaymentsForm.cs" />
+    <Compile Include="InterfacePO_n_Tests\Pages\LoginPage.cs" />
     <Compile Include="InterfacePO_n_Tests\Pages\MainPage.cs" />
     <Compile Include="InterfacePO_n_Tests\Pages\PaymentResultErrorInvalidCreditCard.cs" />
     <Compile Include="InterfacePO_n_Tests\Pages\PaymentResultPage.cs" />

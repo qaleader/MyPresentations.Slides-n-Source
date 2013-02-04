@@ -29,6 +29,12 @@ namespace DemoTest.FinalPageObject.Pages
             lnkDonate.Click();
         }
 
+        public void GoToLoginPage()
+        {
+            var logInLink = Driver.FindElementByCssSelector(@"a[accessKey='o']");
+            logInLink.Click();
+        }
+
         public void Invoke()
         {
             if (Exists() == false)

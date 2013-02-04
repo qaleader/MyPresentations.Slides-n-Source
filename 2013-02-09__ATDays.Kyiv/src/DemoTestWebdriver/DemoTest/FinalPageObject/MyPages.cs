@@ -39,6 +39,10 @@ namespace DemoTest.FinalPageObject
             get { return new PaymentResultErrorInvalidCreditCard(); }
         }
 
+        public static LoginPage LoginPage
+        {
+            get { return new LoginPage(); }
+        }
         
     }
 }

@@ -15,7 +15,7 @@ namespace DemoTest.FinalPageObject.ExpectedControlsTest
         public virtual IHaveExpectedControls CurrentPage { get { return null; } }
 
         [TestMethod]
-        public  void TestExpectedControls()
+        public void TestExpectedControls()
         {
             CurrentPage.Invoke();
             

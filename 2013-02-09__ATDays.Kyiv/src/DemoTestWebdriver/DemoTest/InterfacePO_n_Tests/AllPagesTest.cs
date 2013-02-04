@@ -45,5 +45,12 @@ namespace DemoTest.InterfacePO_n_Tests
         {
             TestThatPageExists(MyPages.DonatePage);
         }
+
+        [TestMethod]
+        public void Test_LoginPage()
+        {
+            TestThatPageExists(MyPages.LoginPage);
+        }
+
     }
 }

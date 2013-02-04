@@ -70,6 +70,19 @@ namespace DemoTest.FinalPageObject
 
         }
 
+        [TestMethod]
+        public void Test_Expected_Controls_Exist()
+        {
+
+            var loginPage = MyPages.LoginPage;
+            loginPage.Invoke();
+
+            foreach (var control in loginPage.GetExpectedControls())
+            {
+                Console.WriteLine(control.TagName);
+            }
+
+        }
 
 
     }

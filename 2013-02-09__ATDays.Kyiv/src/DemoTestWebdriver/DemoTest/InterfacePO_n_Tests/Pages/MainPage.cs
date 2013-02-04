@@ -35,5 +35,11 @@ namespace DemoTest.InterfacePO_n_Tests.Pages
         {
             return Driver.Url == @"http://en.wikipedia.org/wiki/Main_Page";
         }
+
+        internal void GoToLoginPage()
+        {
+            var logInLink = Driver.FindElementByCssSelector(@"a[accessKey='o']");
+            logInLink.Click();
+        }
     }
 }

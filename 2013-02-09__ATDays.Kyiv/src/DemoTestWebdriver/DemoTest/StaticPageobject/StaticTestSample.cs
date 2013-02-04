@@ -20,8 +20,6 @@ namespace DemoTest.StaticPageobject
         public void Donate_test_static()
         {
             MyPages.MainPage.Open();
-
-
             MyPages.MainPage.GoToDonatePage();
             MyPages.DonatePage.Donate_50_UAH_Using_Debit_Card();
             MyPages.DonationPaymentsForm.FillDonationForm
@@ -39,6 +37,7 @@ namespace DemoTest.StaticPageobject
 
                 );
             MyPages.PaymentResultPage.WaitUntilExists();
+            
             string paymentResult = MyPages.PaymentResultPage.GetResultHeaderText();
             Assert.AreEqual("Donate-error", paymentResult);
         }
