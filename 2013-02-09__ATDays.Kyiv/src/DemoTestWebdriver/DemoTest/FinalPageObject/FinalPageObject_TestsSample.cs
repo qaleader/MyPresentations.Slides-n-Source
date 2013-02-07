@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using DemoTest.FinalPageObject.Pages;
 
 namespace DemoTest.FinalPageObject
 {
@@ -73,15 +74,13 @@ namespace DemoTest.FinalPageObject
         [TestMethod]
         public void Test_Expected_Controls_Exist()
         {
+            IHaveExpectedControls somePage = MyPages.LoginPage;
+            somePage.Invoke();
 
-            var loginPage = MyPages.LoginPage;
-            loginPage.Invoke();
-
-            foreach (var control in loginPage.GetExpectedControls())
+            foreach (var control in somePage.GetExpectedControls())
             {
-                Console.WriteLine(control.TagName);
+                Console.WriteLine(control.Location + " " + control.TagName);
             }
-
         }
 
 

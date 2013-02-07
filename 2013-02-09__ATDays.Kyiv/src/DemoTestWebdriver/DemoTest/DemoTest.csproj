@@ -58,7 +58,7 @@
     <Compile Include="FinalPageObject\AllPagesTest.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\ExpectedControlsTestBase.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonationPaymentsForm_ExpectedControls.cs" />
-    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\LoginPage_ExpectedControlsTest.cs" />
+    <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\LoginPage_TestExpectedControls.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\MainPage_ExpectedControls.cs" />
     <Compile Include="FinalPageObject\ExpectedControlsTest\PagesTest\DonatePage_ExpectedControls.cs" />
     <Compile Include="FinalPageObject\FinalPageObject_TestsSample.cs" />

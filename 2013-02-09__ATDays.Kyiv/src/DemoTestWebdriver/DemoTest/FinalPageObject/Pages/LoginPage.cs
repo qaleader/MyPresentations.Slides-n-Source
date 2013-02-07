@@ -15,7 +15,7 @@ namespace DemoTest.FinalPageObject.Pages
     public class LoginPage : AbstractPageBase, IHaveExpectedControls
     {
 
-        [FindsBy(How = How.Name, Using = "wpName")]
+        [FindsBy(How = How.Name, Using = "wpName Похулиганим")]
         private IWebElement txtUserName;
 
         [FindsBy(How = How.Name, Using = "wpPassword")]
