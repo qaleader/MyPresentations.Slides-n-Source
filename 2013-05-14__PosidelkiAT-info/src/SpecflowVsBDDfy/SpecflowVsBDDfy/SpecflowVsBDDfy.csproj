@@ -33,21 +33,27 @@
     <Reference Include="FluentAssertions">
       <HintPath>..\packages\FluentAssertions.2.0.1\lib\net40\FluentAssertions.dll</HintPath>
     </Reference>
-    <Reference Include="Gallio, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+    <Reference Include="Gallio, Version=3.4.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\mbunit.3.3.454.0\lib\net40\Gallio.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Gallio\bin\Gallio.dll</HintPath>
     </Reference>
-    <Reference Include="Gallio40, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+    <Reference Include="Gallio40, Version=3.4.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\mbunit.3.3.454.0\lib\net40\Gallio40.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Gallio\bin\Gallio40.dll</HintPath>
     </Reference>
-    <Reference Include="MbUnit, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\mbunit.3.3.454.0\lib\net40\MbUnit.dll</HintPath>
+    <Reference Include="Machine.Specifications">
+      <HintPath>..\packages\Machine.Specifications.0.5.12\lib\net40\Machine.Specifications.dll</HintPath>
     </Reference>
-    <Reference Include="MbUnit40, Version=3.3.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+    <Reference Include="Machine.Specifications.Clr4">
+      <HintPath>..\packages\Machine.Specifications.0.5.12\lib\net40\Machine.Specifications.Clr4.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit, Version=3.4.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\mbunit.3.3.454.0\lib\net40\MbUnit40.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Gallio\bin\MbUnit.dll</HintPath>
+    </Reference>
+    <Reference Include="MbUnit40, Version=3.4.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Gallio\bin\MbUnit40.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -59,14 +65,33 @@
     <Reference Include="TechTalk.SpecFlow">
       <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
+    <Reference Include="TestStack.BDDfy">
+      <HintPath>..\packages\TestStack.BDDfy.3.14\lib\NET40\TestStack.BDDfy.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Cell.cs" />
+    <Compile Include="Fight\Round01\BDDfy\Round01_Unit_TicTacToe_BoardTests.cs" />
+    <Compile Include="Fight\Round01\UnitTests\Round01_Unit_TicTacToe_BoardTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BDDfy.readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fight\Round01\MSpec\" />
+    <Folder Include="Fight\Round01\SpecFlow\Specs\" />
+    <Folder Include="Fight\Round01\SpecFlow\Steps\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TicTacToeEngine\TicTacToeEngine.csproj">
+      <Project>{e2e8f703-af22-4b43-b78f-27e4706402cc}</Project>
+      <Name>TicTacToeEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
